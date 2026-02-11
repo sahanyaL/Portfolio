@@ -4,7 +4,7 @@ import { IoIosQuote } from "react-icons/io";
 import { AiOutlineStar } from "react-icons/ai";
 
 const ClientSlider = (props) => {
-    const { name, position, img_url, stars, disc, link } = props.item;
+    const { name, position, stars, disc, link } = props.item;
     return (
         <Container>
             <Header>
