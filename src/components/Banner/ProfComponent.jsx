@@ -28,9 +28,7 @@ const ProfComponent = () => {
               </span>
             </div>
           </Social>
-          <a href="/cv/resume.pdf" download>
-            <DownloadBtn>Download CV</DownloadBtn>
-          </a>
+          <DownloadBtn href="/cv/resume.pdf" download="resume.pdf" target="_blank" rel="noopener noreferrer">Download CV</DownloadBtn>
         </Texts>
       </Slide>
       <Slide direction="right">
@@ -158,7 +156,9 @@ const Profile = styled.div`
   }
 `;
 
-const DownloadBtn = styled.button`
+const DownloadBtn = styled.a`
+  display: inline-block;
+  text-decoration: none;
   margin-top: 1.5rem;
   padding: 0.7rem 2rem;
   background-color: #1a56db;
